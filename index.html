@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabanas para veraneio Goulart</title>
+</head>
+
+<body>
+
+    <main>
+        <a href="index.html" class="mba">Inicio</a>
+        <h1>Cabanas para veraneio Goulart</h1>
+        <a href="#" class="mbb"> Cabana</a>
+    </main>
+
+    <form>
+        <div class="part1">
+            <div class="esquerda">
+                <div class="h3">
+                    <h3>Seleciona a Cabana</h3>
+                    <h3>de acordo com seu gosto!</h3>
+                </div>
+                <div class="selecao">
+                    <select id="cabana">
+                        <option value="fto" selected>Cabana Praia do Cassino</option>
+                        <option value="fst">Cabana Praia de São Jose do Norte</option>
+                        <option value="fsi">Cabana Praia do Laranjal</option>
+                    </select>
+                    <button onclick="alerta()">Selecionar</button>
+                </div>
+            </div>
+            <div class="direita">
+                <img src="cabanaimagem.jpg" alt="" id="fotocabana">
+            </div>
+        </div>
+        <div class="part2">
+
+            <div class="linha1">
+                <input type="number" id="diasreservado">
+                <h5>Quantos dias você gostaria de alugar a Cabana?</h5>
+            </div>
+            <div class="linha2">
+                <h5>Diaria R$:</h5>
+
+                <span id="diaria"></span>
+
+            </div>
+            <div class="linha3">
+                <h5>Valor Total R$</h5>
+                <span id="valor">0,00</span>
+            </div>
+
+            <input type="submit" id="finalizar" value="Finalizar" >
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
